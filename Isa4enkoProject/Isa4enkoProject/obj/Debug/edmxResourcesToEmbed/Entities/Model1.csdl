@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="labour" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Applicant">
+    <Key>
+      <PropertyRef Name="id_applicant" />
+    </Key>
+    <Property Name="id_applicant" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="middlename" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_position" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="edication" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="data_completions" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="IdAuthor" />
+    </Key>
+    <Property Name="IdAuthor" Type="Int32" Nullable="false" />
+    <Property Name="NameAuthor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NewsItem" Relationship="Self.FK_NewsItem_Author" FromRole="Author" ToRole="NewsItem" />
+  </EntityType>
+  <EntityType Name="Deal">
+    <Key>
+      <PropertyRef Name="id_deal" />
+    </Key>
+    <Property Name="id_deal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="id_applicant" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="id_vacancy" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="id_agent" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="data_compilations" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="commission" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employer">
+    <Key>
+      <PropertyRef Name="id_employers" />
+    </Key>
+    <Property Name="id_employers" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name_organization" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type_of_activity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="adress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="NewsItem">
+    <Key>
+      <PropertyRef Name="IdNewsItem" />
+    </Key>
+    <Property Name="IdNewsItem" Type="Int32" Nullable="false" />
+    <Property Name="HeaderNewsItem" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TextNewsItem" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreationDateNewsItem" Type="DateTime" Precision="0" />
+    <Property Name="PhotoNewsItem" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IdAuthor" Type="Int32" />
+    <NavigationProperty Name="Author" Relationship="Self.FK_NewsItem_Author" FromRole="NewsItem" ToRole="Author" />
+  </EntityType>
+  <EntityType Name="Position">
+    <Key>
+      <PropertyRef Name="id_position" />
+    </Key>
+    <Property Name="id_position" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="name_position" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="IdRole" />
+    </Key>
+    <Property Name="IdRole" Type="Int32" Nullable="false" />
+    <Property Name="NameRole" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="Self.FK_User_Role" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Table_agent">
+    <Key>
+      <PropertyRef Name="id_agent" />
+    </Key>
+    <Property Name="id_agent" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Midllename" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdUser" Type="Int32" Nullable="false" />
+    <Property Name="NameUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SurnameUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PatronymicUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoginUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdRole" Type="Int32" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_User_Role" FromRole="User" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="Vacancy">
+    <Key>
+      <PropertyRef Name="id_vacancy" />
+    </Key>
+    <Property Name="id_vacancy" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_position" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="edication" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="qualification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="salary" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="data_completions" Type="DateTime" Precision="0" />
+    <Property Name="working_conditions" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_employers" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_NewsItem_Author">
+    <End Role="Author" Type="Self.Author" Multiplicity="0..1" />
+    <End Role="NewsItem" Type="Self.NewsItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Author">
+        <PropertyRef Name="IdAuthor" />
+      </Principal>
+      <Dependent Role="NewsItem">
+        <PropertyRef Name="IdAuthor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="IdRole" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="IdRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Labour_exchangeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Applicant" EntityType="Self.Applicant" />
+    <EntitySet Name="Author" EntityType="Self.Author" />
+    <EntitySet Name="Deal" EntityType="Self.Deal" />
+    <EntitySet Name="Employer" EntityType="Self.Employer" />
+    <EntitySet Name="NewsItem" EntityType="Self.NewsItem" />
+    <EntitySet Name="Position" EntityType="Self.Position" />
+    <EntitySet Name="Role" EntityType="Self.Role" />
+    <EntitySet Name="Table_agent" EntityType="Self.Table_agent" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <EntitySet Name="Vacancy" EntityType="Self.Vacancy" />
+    <AssociationSet Name="FK_NewsItem_Author" Association="Self.FK_NewsItem_Author">
+      <End Role="Author" EntitySet="Author" />
+      <End Role="NewsItem" EntitySet="NewsItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

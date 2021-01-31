@@ -1,0 +1,99 @@
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csprojAssemblyReference.cache
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csproj.ResolveComReference.cache
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\MainWindow.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\ChartPage.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\InfoForAdmin.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\LoginPage.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuAgentPage.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuEmployerPage.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuApplicantPage.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\NewsPage.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\PrintHTML.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\UserControls\NewsUserControl.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\App.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject_Content.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject_MarkupCompile.cache
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject_MarkupCompile.lref
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\bin\Debug\Isa4enkoProject.exe.config
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\bin\Debug\Isa4enkoProject.exe
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\bin\Debug\Isa4enkoProject.pdb
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\bin\Debug\EntityFramework.dll
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\bin\Debug\EntityFramework.xml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\App.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\MainWindow.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\ChartPage.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\InfoForAdmin.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\LoginPage.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuAgentPage.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuEmployerPage.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuApplicantPage.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\NewsPage.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\PrintHTML.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\UserControls\NewsUserControl.baml
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.g.resources
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.Properties.Resources.resources
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csproj.GenerateResource.cache
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csproj.CoreCompileInputs.cache
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csproj.CopyComplete
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.exe
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.pdb
+C:\Users\student20\Desktop\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuAdminPage.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csprojAssemblyReference.cache
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csproj.ResolveComReference.cache
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\MainWindow.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\InfoForAdmin.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\LoginPage.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuAdminPage.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuEmployerPage.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuApplicantPage.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\NewsPage.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\PrintHTML.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\UserControls\NewsUserControl.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\App.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject_Content.g.cs
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject_MarkupCompile.cache
+E:\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject_MarkupCompile.lref
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\MainWindow.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\EmployerInfo.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\InfoForAdmin.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\LoginPage.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuAdminPage.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuEmployerPage.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuApplicantPage.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\NewsPage.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\PrintHTML.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\UserControls\NewsUserControl.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\App.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject_Content.g.cs
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject_MarkupCompile.cache
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject_MarkupCompile.lref
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\bin\Debug\Isa4enkoProject.exe.config
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\bin\Debug\Isa4enkoProject.exe
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\bin\Debug\Isa4enkoProject.pdb
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\bin\Debug\EntityFramework.dll
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\bin\Debug\EntityFramework.SqlServer.dll
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\bin\Debug\EntityFramework.xml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\bin\Debug\EntityFramework.SqlServer.xml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\bin\Debug\ru\EntityFramework.resources.dll
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\App.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\MainWindow.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\InfoForAdmin.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\LoginPage.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuAdminPage.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuEmployerPage.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\MenuApplicantPage.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\NewsPage.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\PrintHTML.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\UserControls\NewsUserControl.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Pages\EmployerInfo.baml
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.g.resources
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.Properties.Resources.resources
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csproj.GenerateResource.cache
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csproj.CoreCompileInputs.cache
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.csproj.CopyComplete
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.exe
+E:\work old\Isa4enkoProject\Isa4enkoProject\Isa4enkoProject\obj\Debug\Isa4enkoProject.pdb

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище labour" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Applicant">
+    <Key>
+      <PropertyRef Name="id_applicant" />
+    </Key>
+    <Property Name="id_applicant" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="middlename" Type="nvarchar" MaxLength="50" />
+    <Property Name="gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_position" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="edication" Type="nvarchar" MaxLength="50" />
+    <Property Name="data_completions" Type="date" />
+  </EntityType>
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="IdAuthor" />
+    </Key>
+    <Property Name="IdAuthor" Type="int" Nullable="false" />
+    <Property Name="NameAuthor" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Deal">
+    <Key>
+      <PropertyRef Name="id_deal" />
+    </Key>
+    <Property Name="id_deal" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="id_applicant" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="id_vacancy" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="id_agent" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="data_compilations" Type="date" Nullable="false" />
+    <Property Name="commission" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employer">
+    <Key>
+      <PropertyRef Name="id_employers" />
+    </Key>
+    <Property Name="id_employers" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name_organization" Type="nvarchar" MaxLength="50" />
+    <Property Name="type_of_activity" Type="nvarchar" MaxLength="50" />
+    <Property Name="adress" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NewsItem">
+    <Key>
+      <PropertyRef Name="IdNewsItem" />
+    </Key>
+    <Property Name="IdNewsItem" Type="int" Nullable="false" />
+    <Property Name="HeaderNewsItem" Type="nvarchar" MaxLength="200" />
+    <Property Name="TextNewsItem" Type="nvarchar(max)" />
+    <Property Name="CreationDateNewsItem" Type="date" />
+    <Property Name="PhotoNewsItem" Type="image" />
+    <Property Name="IdAuthor" Type="int" />
+  </EntityType>
+  <EntityType Name="Position">
+    <Key>
+      <PropertyRef Name="id_position" />
+    </Key>
+    <Property Name="id_position" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="name_position" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="IdRole" />
+    </Key>
+    <Property Name="IdRole" Type="int" Nullable="false" />
+    <Property Name="NameRole" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Table_agent">
+    <Key>
+      <PropertyRef Name="id_agent" />
+    </Key>
+    <Property Name="id_agent" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Midllename" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="NameUser" Type="nvarchar" MaxLength="50" />
+    <Property Name="SurnameUser" Type="nvarchar" MaxLength="50" />
+    <Property Name="PatronymicUser" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoginUser" Type="nvarchar" MaxLength="50" />
+    <Property Name="PasswordUser" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdRole" Type="int" />
+  </EntityType>
+  <EntityType Name="Vacancy">
+    <Key>
+      <PropertyRef Name="id_vacancy" />
+    </Key>
+    <Property Name="id_vacancy" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_position" Type="nvarchar" MaxLength="50" />
+    <Property Name="edication" Type="nvarchar" MaxLength="50" />
+    <Property Name="qualification" Type="nvarchar" MaxLength="50" />
+    <Property Name="salary" Type="money" />
+    <Property Name="data_completions" Type="date" />
+    <Property Name="working_conditions" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_employers" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_NewsItem_Author">
+    <End Role="Author" Type="Self.Author" Multiplicity="0..1" />
+    <End Role="NewsItem" Type="Self.NewsItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Author">
+        <PropertyRef Name="IdAuthor" />
+      </Principal>
+      <Dependent Role="NewsItem">
+        <PropertyRef Name="IdAuthor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="IdRole" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="IdRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище labourContainer">
+    <EntitySet Name="Applicant" EntityType="Self.Applicant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Deal" EntityType="Self.Deal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employer" EntityType="Self.Employer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewsItem" EntityType="Self.NewsItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Position" EntityType="Self.Position" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_agent" EntityType="Self.Table_agent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vacancy" EntityType="Self.Vacancy" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_NewsItem_Author" Association="Self.FK_NewsItem_Author">
+      <End Role="Author" EntitySet="Author" />
+      <End Role="NewsItem" EntitySet="NewsItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

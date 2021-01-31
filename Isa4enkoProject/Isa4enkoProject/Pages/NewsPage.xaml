@@ -1,0 +1,69 @@
+﻿<Page x:Class="Isa4enkoProject.Pages.NewsPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Isa4enkoProject.Pages"
+        xmlns:usercontrols="clr-namespace:Isa4enkoProject.UserControls"
+        mc:Ignorable="d"
+        Title="NewsPage" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="9*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Фамилия" ></TextBlock>
+                <TextBox x:Name="TbFamilia"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Имя" ></TextBlock>
+                <TextBox x:Name="TbName"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Отчество" ></TextBlock>
+                <TextBox x:Name="TbClientMiddlename"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Дата рождения" ></TextBlock>
+                <DatePicker Width="125" Height="25" x:Name="DPDateBirth">
+                    
+                </DatePicker>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Пол" ></TextBlock>
+                <ComboBox x:Name="CbGender" Width="125" Height="20">
+                    <ComboBoxItem Content="Женский" Height="100" Width="100"/>
+                    <ComboBoxItem Content="Мужской" Height="100" Width="100"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Образование" ></TextBlock>
+                <TextBox x:Name="TbClientEducation"></TextBox>
+            </StackPanel> 
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Вакансия" ></TextBlock>
+                <TextBox x:Name="TbClientPost"></TextBox>
+            </StackPanel>
+                        <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Роль" ></TextBlock>
+                <TextBox x:Name="TbClientRole" Text="3" IsEnabled="False"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Логин" ></TextBlock>
+                <TextBox x:Name="TbClientLogin"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock  Style="{StaticResource CommonText}" Text="Пароль" ></TextBlock>
+                <TextBox x:Name="TbClientPass" ></TextBox>
+            </StackPanel>
+            <Button x:Name="BtnAdd" Content="Зарегистрироваться" Width="190" HorizontalAlignment="Center" Click="BtnAdd_Click"></Button>
+
+
+        </StackPanel>
+
+    </Grid>
+</Page>

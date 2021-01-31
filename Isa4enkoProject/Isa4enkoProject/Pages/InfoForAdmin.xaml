@@ -1,0 +1,52 @@
+﻿<Page x:Class="Isa4enkoProject.Pages.InfoForAdmin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Isa4enkoProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="InfoForAdmin">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="1" Name="DGridClients" Margin="5" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="Код заявителя" Binding="{Binding id_applicant}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Имя" Binding="{Binding name}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Фамилия" Binding="{Binding fist_name}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Отчество" Binding="{Binding middle_name}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Гендер/Пол" Binding="{Binding gender}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Образование" Binding="{Binding edication}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock TextAlignment="Right" Text="Введите слово для поиска:" Style="{StaticResource CommonText}" Width="160"></TextBlock>
+                    <TextBox Name="TBoxSearch" TextChanged="TBoxSearch_TextChanged" Width="130"></TextBox>
+
+                    <Button Name="butPrint" Content="Печать" Click="butPrint_Click" Width="70" ></Button>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock HorizontalAlignment="Right" TextAlignment="Right" Text="Сортировка по:" Style="{StaticResource CommonText}" Width="160"></TextBlock>
+                    <ComboBox HorizontalAlignment="Right" Name="ComboFilter" SelectionChanged="ComboFilter_SelectionChanged" SelectedIndex="0" Width="150">
+                        <ComboBoxItem Content="Имя"></ComboBoxItem>
+                        <ComboBoxItem Content="Фамилия"></ComboBoxItem>
+                        <ComboBoxItem Content="Отчество"></ComboBoxItem>
+                        <ComboBoxItem Content="Номер телефона"></ComboBoxItem>
+                        <ComboBoxItem Content="Код паспорта"></ComboBoxItem>
+                    </ComboBox>
+
+                </StackPanel>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Page>

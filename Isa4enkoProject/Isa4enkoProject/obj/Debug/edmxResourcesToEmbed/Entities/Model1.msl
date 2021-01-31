@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище labourContainer" CdmEntityContainer="Labour_exchangeEntities">
+    <EntitySetMapping Name="Applicant">
+      <EntityTypeMapping TypeName="labour.Applicant">
+        <MappingFragment StoreEntitySet="Applicant">
+          <ScalarProperty Name="id_applicant" ColumnName="id_applicant" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="id_position" ColumnName="id_position" />
+          <ScalarProperty Name="edication" ColumnName="edication" />
+          <ScalarProperty Name="data_completions" ColumnName="data_completions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Author">
+      <EntityTypeMapping TypeName="labour.Author">
+        <MappingFragment StoreEntitySet="Author">
+          <ScalarProperty Name="IdAuthor" ColumnName="IdAuthor" />
+          <ScalarProperty Name="NameAuthor" ColumnName="NameAuthor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deal">
+      <EntityTypeMapping TypeName="labour.Deal">
+        <MappingFragment StoreEntitySet="Deal">
+          <ScalarProperty Name="id_deal" ColumnName="id_deal" />
+          <ScalarProperty Name="id_applicant" ColumnName="id_applicant" />
+          <ScalarProperty Name="id_vacancy" ColumnName="id_vacancy" />
+          <ScalarProperty Name="id_agent" ColumnName="id_agent" />
+          <ScalarProperty Name="data_compilations" ColumnName="data_compilations" />
+          <ScalarProperty Name="commission" ColumnName="commission" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employer">
+      <EntityTypeMapping TypeName="labour.Employer">
+        <MappingFragment StoreEntitySet="Employer">
+          <ScalarProperty Name="id_employers" ColumnName="id_employers" />
+          <ScalarProperty Name="Name_organization" ColumnName="Name_organization" />
+          <ScalarProperty Name="type_of_activity" ColumnName="type_of_activity" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsItem">
+      <EntityTypeMapping TypeName="labour.NewsItem">
+        <MappingFragment StoreEntitySet="NewsItem">
+          <ScalarProperty Name="IdNewsItem" ColumnName="IdNewsItem" />
+          <ScalarProperty Name="HeaderNewsItem" ColumnName="HeaderNewsItem" />
+          <ScalarProperty Name="TextNewsItem" ColumnName="TextNewsItem" />
+          <ScalarProperty Name="CreationDateNewsItem" ColumnName="CreationDateNewsItem" />
+          <ScalarProperty Name="PhotoNewsItem" ColumnName="PhotoNewsItem" />
+          <ScalarProperty Name="IdAuthor" ColumnName="IdAuthor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Position">
+      <EntityTypeMapping TypeName="labour.Position">
+        <MappingFragment StoreEntitySet="Position">
+          <ScalarProperty Name="id_position" ColumnName="id_position" />
+          <ScalarProperty Name="name_position" ColumnName="name_position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="labour.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="NameRole" ColumnName="NameRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_agent">
+      <EntityTypeMapping TypeName="labour.Table_agent">
+        <MappingFragment StoreEntitySet="Table_agent">
+          <ScalarProperty Name="id_agent" ColumnName="id_agent" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Midllename" ColumnName="Midllename" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="labour.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+          <ScalarProperty Name="SurnameUser" ColumnName="SurnameUser" />
+          <ScalarProperty Name="PatronymicUser" ColumnName="PatronymicUser" />
+          <ScalarProperty Name="LoginUser" ColumnName="LoginUser" />
+          <ScalarProperty Name="PasswordUser" ColumnName="PasswordUser" />
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vacancy">
+      <EntityTypeMapping TypeName="labour.Vacancy">
+        <MappingFragment StoreEntitySet="Vacancy">
+          <ScalarProperty Name="id_vacancy" ColumnName="id_vacancy" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="id_position" ColumnName="id_position" />
+          <ScalarProperty Name="edication" ColumnName="edication" />
+          <ScalarProperty Name="qualification" ColumnName="qualification" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="data_completions" ColumnName="data_completions" />
+          <ScalarProperty Name="working_conditions" ColumnName="working_conditions" />
+          <ScalarProperty Name="id_employers" ColumnName="id_employers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

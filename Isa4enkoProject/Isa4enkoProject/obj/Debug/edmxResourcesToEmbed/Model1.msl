@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище IsachenkoModelContainer" CdmEntityContainer="IsachenkoEntities1">
+    <EntitySetMapping Name="agent">
+      <EntityTypeMapping TypeName="IsachenkoModel.agent">
+        <MappingFragment StoreEntitySet="agent">
+          <ScalarProperty Name="id_agent" ColumnName="id_agent" />
+          <ScalarProperty Name="fist_name" ColumnName="fist_name" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="middle_name" ColumnName="middle_name" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="roles" ColumnName="roles" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="applicant">
+      <EntityTypeMapping TypeName="IsachenkoModel.applicant">
+        <MappingFragment StoreEntitySet="applicant">
+          <ScalarProperty Name="id_applicant" ColumnName="id_applicant" />
+          <ScalarProperty Name="fist_name" ColumnName="fist_name" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="middle_name" ColumnName="middle_name" />
+          <ScalarProperty Name="date_of_bth" ColumnName="date_of_bth" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="edication" ColumnName="edication" />
+          <ScalarProperty Name="post" ColumnName="post" />
+          <ScalarProperty Name="roles" ColumnName="roles" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="deals">
+      <EntityTypeMapping TypeName="IsachenkoModel.deals">
+        <MappingFragment StoreEntitySet="deals">
+          <ScalarProperty Name="id_deals" ColumnName="id_deals" />
+          <ScalarProperty Name="id_vacancy" ColumnName="id_vacancy" />
+          <ScalarProperty Name="id_applicants" ColumnName="id_applicants" />
+          <ScalarProperty Name="id_agent" ColumnName="id_agent" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employer">
+      <EntityTypeMapping TypeName="IsachenkoModel.Employer">
+        <MappingFragment StoreEntitySet="Employer">
+          <ScalarProperty Name="id_employers" ColumnName="id_employers" />
+          <ScalarProperty Name="name_organisation" ColumnName="name_organisation" />
+          <ScalarProperty Name="type_of_activiti" ColumnName="type_of_activiti" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="name_users" ColumnName="name_users" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vacancy">
+      <EntityTypeMapping TypeName="IsachenkoModel.vacancy">
+        <MappingFragment StoreEntitySet="vacancy">
+          <ScalarProperty Name="id_vacancy" ColumnName="id_vacancy" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="post" ColumnName="post" />
+          <ScalarProperty Name="edication" ColumnName="edication" />
+          <ScalarProperty Name="languages" ColumnName="languages" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="driving_license" ColumnName="driving_license" />
+          <ScalarProperty Name="working_conditions" ColumnName="working_conditions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="IsachenkoModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="id_roles" ColumnName="id_roles" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsachenkoModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User1">
+      <EntityTypeMapping TypeName="IsachenkoModel.User1">
+        <MappingFragment StoreEntitySet="User1">
+          <ScalarProperty Name="id_roles" ColumnName="id_roles" />
+          <ScalarProperty Name="userpassword" ColumnName="userpassword" />
+          <ScalarProperty Name="userlogin" ColumnName="userlogin" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
